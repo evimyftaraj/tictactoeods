@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+}
+
+#gridContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 auto;
+    margin-top: 0 auto;
+    padding: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.gridItem {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
+#playerDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentPlayerDisplay, #currentPlayerDisplayAi {
+    font-weight: 600;
+    font-style: bold;
+    font-variant: small-caps;
+    letter-spacing: 0.5;
+    background-color: rgb(172, 202, 127);
+    width: 500px;
+    text-align: center;
+}
+
+#playerNames {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+button {
+    width: 80px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15%;
+}
+
+input {
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro, #selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection {
+    gap: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}

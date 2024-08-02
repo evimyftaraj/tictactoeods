@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="tictactoe.js"></script>
+</head>
+<body>
+    <div id="introSection">
+        <div id="intro">
+            <p>Please select whether you would like to play with a friend, or against AI</p>
+        </div>
+        <div id="selection">
+            <button id="friend">Friend</button>
+            <button id="ai">AI</button>
+        </div>
+    </div>
+
+    <div id="playerGame" class="hidden">
+        <div id="playerNames">
+            <input type="text" id="player1Input" placeholder="Player 1's name..." required>
+            <p> vs. </p>
+            <input type="text" id="player2Input" placeholder="Player 2's name..." required>
+        </div>
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="playerDisplay">
+            <p id="currentPlayerDisplay"></p>
+        </div>
+    </div>
+
+    <div id="aiGame" class="hidden">
+        <div id="playerNames">
+            <input type="text" id="player1InputAI" placeholder="Player 1's name..." required>
+            <p> vs. </p>
+            <input type="text" id="aiInput" placeholder="AI's name..." required>
+        </div>
+        <div id="buttons">
+            <button id="startAI">Start</button>
+            <button id="resetAI">Reset</button>
+        </div>
+        <div id="playerDisplay">
+            <p id="currentPlayerDisplayAi"></p>
+        </div>
+    </div>
+    
+    <div id="gridContainer">
+        <div class="grid hidden">
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+            <div class="gridItem"></div>
+        </div>
+    </div>
+</body>
+</html>
